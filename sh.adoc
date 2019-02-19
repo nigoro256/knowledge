@@ -1,0 +1,5 @@
+[source, sh]
+----
+# 行の先頭にファイル名を付ける（macではできない）
+strings --print-file-name
+----

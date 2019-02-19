@@ -1,4 +1,0 @@
-[source, sh]
-----
-strings --print-file-name
-----
