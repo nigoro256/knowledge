@@ -1,0 +1,34 @@
+= AppStoreに表示される言語設定
+
+アプリ内の info.plist に記載する
+
+== 1. CFBundleDevelopmentRegion
+
+[source]
+----
+<key>CFBundleDevelopmentRegion</key>
+<string>ja_JP</string>
+----
+
+GUIでは
+[source]
+----
+Localization native development region : Japan
+----
+
+== 2. CFBundleLocalizations
+
+[source]
+----
+<key>CFBundleLocalizations</key>
+<array>
+  <string>ja</string>
+</array>
+----
+
+GUIでは
+[source]
+----
+Localizations
+  Item 0 : Japanese
+----
