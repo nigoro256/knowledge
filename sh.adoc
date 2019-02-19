@@ -2,4 +2,7 @@
 ----
 # 行の先頭にファイル名を付ける（macではできない）
 strings --print-file-name
+
+# QuickTimeでキャプチャした.movを.mp4に変換
+ffmpeg -i test.mov -vcodec copy test.mp4
 ----
