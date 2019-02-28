@@ -1,0 +1,8 @@
+= UIScrollViewでスクロールできないようにする
+
+[source, cpp]
+----
+uiScrollView->setDirection(cocos2d::ui::ScrollView::Direction::NONE);
+----
+
+``UIListView``とかも同じ。（クラス名は変わる）
