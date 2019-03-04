@@ -24,3 +24,6 @@ syntax on
 
 " 現在の行を強調表示
 set cursorline
+
+" ルーラーを表示
+set ruler
