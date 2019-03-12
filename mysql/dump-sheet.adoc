@@ -1,0 +1,30 @@
+= dump sheet
+
+* -d で no-data
+* -t で record only
+* -w で where
+
+== export
+
+[source, sh]
+----
+# データベース全体をダンプ
+mysqldump -u ${USER_NAME} -p --single-transaction --compress --order-by-primary ${DB_NAME} > db_dump.sql
+
+# テーブルをダンプ
+mysqldump -u ${USER_NAME} -p --single-transaction --compress --order-by-primary ${DB_NAME} ${TABLE_NAME} > table_dump.sql
+
+# --databases を使用すると出力に USE が含まれる
+mysqldump -u ${USER_NAME} -p --single-transaction --compress --order-by-primary --databases ${DB_NAME}
+----
+
+== import
+
+[source, sh]
+----
+mysql -u ${USER_NAME} -p ${DB_NAME} < ${DUMP_FILE}
+----
+
+== 参考（というか全て）
+
+https://qiita.com/PlanetMeron/items/3a41e14607a65bc9b60c[mysqldumpまとめ]
