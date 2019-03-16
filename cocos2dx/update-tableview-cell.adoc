@@ -1,0 +1,10 @@
+[source, cpp]
+----
+cocos2d::Vector<cocos2d::Node*> nodes = _tableView->getContainer()->getChildren();
+for (cocos2d::Node* node : nodes) {
+  auto* const cell = dynamic_cast<cocos2d::extension::TableViewCell*>(node);
+  if (cell != nullptr) {
+    _tableView->updateCellAtIndex(cell->getIdx());
+  }
+}
+----
