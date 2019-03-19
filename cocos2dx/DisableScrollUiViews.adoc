@@ -1,0 +1,17 @@
+= UI*Viewでタッチによるスクロールをできないようにする
+
+== UIListView
+
+[source, cpp]
+----
+uiListView->setDirection(cocos2d::ui::ListView::Direction::NONE);
+----
+
+== UIScrollView
+
+[source, cpp]
+----
+scrollView->setTouchEnabled(false);
+----
+
+タッチがViewを貫通するので別途制御が必要
