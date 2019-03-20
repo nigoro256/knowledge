@@ -15,3 +15,20 @@ NS = notification node size
 [  |<--- VS:1334 --->|  ]
  <------ NS:1334 ------>
 ----
+
+== タッチの優先度をどうにかする
+
+[source, cpp]
+----
+void EventDispatcher::sortEventListenersOfSceneGraphPriority(const EventListener::ListenerID& listenerID, Node* rootNode)
+{
+    ~~~
+    visitTarget(rootNode, true);
+
+    // 下記3行を追加
+    if (auto* const notificationNode = Director::getInstance()->getNotificationNode()) {
+      visitTarget(notificationNode, true);
+    }
+    ~~~
+}
+----
