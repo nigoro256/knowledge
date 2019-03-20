@@ -1,7 +1,8 @@
-= notification-node
+= NotificationNode
 
 visible size がそのまま全画面に広げられるのでタッチエフェクト以外では使用しない方が吉。 +
-と言うか、タッチの優先度もおかしくなるっぽいのでタッチエフェクト以外では使用しない。
+と言うか、タッチの優先度もおかしくなるっぽいのでタッチエフェクト以外では使用しない。 +
+（タッチエフェクトは``addEventListenerWithFixedPriority(listener, -1)``を使う）
 
 *e.g. iPhoneX*
 [source]
