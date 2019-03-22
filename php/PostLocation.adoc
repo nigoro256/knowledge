@@ -1,0 +1,35 @@
+= POSTをPOSTでロケーションさせたい
+
+[source, php]
+----
+$url = "";
+$data = "";
+
+$curl = curl_init($url);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($curl, CURLOPT_HEADER, true);
+curl_setopt($curl, CURLOPT_POST, true);
+curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+curl_setopt($curl, CURLOPT_USERAGENT, $_SERVER["HTTP_USER_AGENT"]);
+curl_setopt($curl, CURLOPT_USERPWD, $_SERVER["PHP_AUTH_USER"] . ":" . $_SERVER["PHP_AUTH_PW"]);
+
+$response = curl_exec($curl);
+$header_size = curl_getinfo($curl, CURLINFO_HEADER_SIZE);
+
+curl_close($curl);
+
+// ヘッダとボディに分割
+$header = trim(substr($response, 0, $header_size));
+$body = substr($response, $header_size);
+
+// ヘッダ出力
+$header = str_replace([ "\r\n", "\r" ], "\n", $header);
+$headers = explode("\n", $header);
+foreach ($headers as $h) {
+  header($h);
+}
+
+// ボディ出力して終了
+echo($body);
+exit(0);
+----
