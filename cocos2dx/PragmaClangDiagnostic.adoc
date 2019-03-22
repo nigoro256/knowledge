@@ -1,0 +1,46 @@
+= pragma clang diagnostic
+
+== #pragma clang diagnostic ignored
+
+[source, cpp]
+----
+#pragma clang diagnostic ignored "-Wname"
+----
+
+This pragma disables the diagnostic message specified by name.
+
+== #pragma clang diagnostic warning
+
+[source, cpp]
+----
+#pragma clang diagnostic warning "-Wname"
+----
+
+This pragma sets the diagnostic message specified by name to warning severity.
+
+== #pragma clang diagnostic error
+
+[source, cpp]
+----
+#pragma clang diagnostic error "-Wname"
+----
+
+This pragma sets the diagnostic message specified by name to error severity.
+
+== #pragma clang diagnostic fatal
+
+[source, cpp]
+----
+#pragma clang diagnostic fatal "-Wname"
+----
+
+This pragma sets the diagnostic message specified by name to fatal error severity.
+Fatal error causes compilation to fail without processing the rest of the file.
+
+== #pragma clang diagnostic push, #pragma clang diagnostic pop
+
+[source, cpp]
+----
+#pragma clang diagnostic push
+#pragma clang diagnostic pop
+----
