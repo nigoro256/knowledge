@@ -1,0 +1,8 @@
+= UIScrollViewでタッチによるスクロールをできないようにする
+
+[source, cpp]
+----
+scrollView->setTouchEnabled(false);
+----
+
+タッチがViewを貫通するので別途制御が必要
