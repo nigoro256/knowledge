@@ -1,8 +1,17 @@
 = シェル系のメモ
 
 == stringsの行頭にファイル名を付ける
+
 `strings --print-file-name` +
 ※macはできない (オプションがない)
 
 == QuickTimeでキャプチャした.movを.mp4に変換
+
 `ffmpeg -i test.mov -vcodec copy test.mp4`
+
+== mac拡張属性を消す
+
+``ls``すると表示される``@``の事。 +
+これが付いているファイルをアーカイブするとメタファイルが一緒に入るので消したい。
+
+`xattr -c file ...`
