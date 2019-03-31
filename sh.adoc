@@ -15,3 +15,14 @@
 これが付いているファイルをアーカイブするとメタファイルが一緒に入るので消したい。
 
 `xattr -c file ...`
+
+== Git: ローカルブランチを origin の最新で更新したいけれど checkout したくない場合
+
+[source, sh]
+----
+git fetch
+git push . origin/master:master
+----
+
+`git push $remote $local_branch:$remote_branch` +
+「``$remote``リポジトリの``$remote_branch``ブランチを自分のリポジトリの``$local_branch``で更新する」
