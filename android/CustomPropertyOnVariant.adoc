@@ -1,0 +1,20 @@
+[source, groovy]
+----
+android {
+  flavorDimensions 'example'
+
+  productFlavors {
+    develop {
+      ext.customProperty = 'A'
+    }
+    master {
+      ext.customProperty = 'B'
+    }
+  }
+
+  applicationVariants.all { variant ->
+    def customProperty = variant.productFlavors.get(0).ext.customProperty;
+    println "!!!: CustomProperty = ${customProperty}"
+  }
+}
+----
