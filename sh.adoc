@@ -26,3 +26,16 @@ git push . origin/master:master
 
 `git push $remote $local_branch:$remote_branch` +
 「``$remote``リポジトリの``$remote_branch``ブランチを自分のリポジトリの``$local_branch``で更新する」
+
+== 一時ファイルを作成
+
+[source, sh]
+----
+readonly tmpfile=$(mktemp)
+
+function rm_tmpfile() {
+  [[ -f "$tmpfile" ]] && rm -f "$tmpfile"
+}
+trap rm_tmpfile EXIT
+trap 'trap - EXIT; rm_tmpfile; exit -1' INT PIPE TERM
+----
