@@ -1,20 +1,20 @@
 [source, cs]
 ----
-// Copyright information 
+// Copyright information
+// Using directives
 
-namespace CompanyName.Technology.Feature 
-{ 
-    // Using directives 
-    // Global Delegates 
-  
-    class ClassName 
-    { 
-        // 1. Fields, Constants 
-        // 2. Constructors 
-        // 3. Events 
-        // 4. Properties 
-        // 5. Methods 
-        // 6. Nested Types 
-    } 
+namespace CompanyName.Technology.Feature
+{
+    // Global Delegates
+
+    class ClassName
+    {
+        // 1. Fields, Constants
+        // 2. Constructors
+        // 3. Events
+        // 4. Properties
+        // 5. Methods
+        // 6. Nested Types
+    }
 }
 ----
