@@ -1,0 +1,9 @@
+= 署名済みAPKを署名し直す
+
+[source, sh]
+----
+mv /path/to/signed.apk /path/to/apk.zip
+zip /path/to/apk.zip -d "META-INF/*"
+mv /path/to/apk.zip /path/to/unsigned.apk
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore /path/to/keystore /path/to/unsigned.apk ${keystorealias}
+----
