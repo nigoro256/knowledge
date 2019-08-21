@@ -1,0 +1,2 @@
+. 空配列 `[]` は使えない (Uninitialized JsonData)
+. iOS で bool `true, false` が使えない らしい
