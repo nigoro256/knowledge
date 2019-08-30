@@ -1,0 +1,15 @@
+= uGUIのボタンを無効にするいくつかの方法
+
+2017.4.22f1 Personal
+
+. `button.interactable = false;`
+* Rayは貫通しない
+* 状態がDisabledになる
+
+. `button.enable = false;`
+* Rayは貫通する
+* 状態がDisabledにならない
+
+. `button.transition = Selectable.Transition.None;`
+* Rayは貫通しない
+* 状態がDisabledにならない
