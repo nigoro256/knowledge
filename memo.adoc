@@ -1,3 +1,8 @@
+= メモ書き
+
+
+== 単語
+
 * ブルーム
 * リムライト
 * 極座標
@@ -11,3 +16,20 @@
 * テクスチャアニメーション
 * ライトベイク？
 * テッセレーション
+
+
+== PostgreSQL
+
+[source, sh]
+----
+$ mkdir postgres
+
+$ initdb ./postgres -E utf8
+
+$ vim postgres/postgresql.conf
+listen_addresses = 'localhost'
+
+$ postgres -D ./postgres
+
+$ psql -d postgres
+----
