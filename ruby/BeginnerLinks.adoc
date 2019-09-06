@@ -3,3 +3,5 @@
 * https://www.ruby-lang.org/ja/documentation/ruby-from-other-languages/[他言語からのRuby入門]
 * https://qiita.com/Yaruki00/items/d677e0751c90500afc8c/[Railsのroutesを読む]
 * https://qiita.com/inoue_max/items/fa82863ab10a3052d2ff/[railsのroutes.rbのmemberとcollectionの違いをわかりやすく解説してみた。〜rails初心者から中級者へ〜]
+* https://qiita.com/Kirika/items/42d66e17d39fe944bf9d/[他言語経験者がRailsの案件にジョインしたときに、何を足掛かりにすべきか]
+* https://qiita.com/Sa2Knight/items/6e42b11d297c50c49253/[Ruby Rangeクラスで範囲を扱うTips]
