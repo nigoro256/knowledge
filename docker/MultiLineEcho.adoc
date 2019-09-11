@@ -2,7 +2,7 @@
 
 [source]
 ----
-RUN echo $'ABC\n\
+RUN echo 'ABC\n\
 DEF\n\
 GHI\n\
 JKL' > /tmp/test.txt
