@@ -1,0 +1,19 @@
+= イメージを削除する
+
+== イメージを使用しているコンテナを削除する
+
+[source, sh]
+----
+# 停止しているものも含めてコンテナ一覧を表示
+docker ps -a
+
+# 全コンテナを削除
+docker rm $(docker ps -aq)
+----
+
+== イメージを削除
+
+[source, sh]
+----
+docker image rm $IMAGE
+----
