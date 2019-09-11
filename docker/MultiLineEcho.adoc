@@ -1,0 +1,9 @@
+= Dockerfile の RUN で複数行の echo を行う
+
+[source]
+----
+RUN echo $'ABC\n\
+DEF\n\
+GHI\n\
+JKL' > /tmp/test.txt
+----
