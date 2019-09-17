@@ -1,3 +1,7 @@
+= Unity Coding Style
+
+== Class layout
+
 [source, cs]
 ----
 // Copyright information
