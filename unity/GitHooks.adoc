@@ -26,8 +26,8 @@ git config unity3d.assets-dir client/Assets
 
 [source, bash]
 ----
-#!/bin/bash
-readonly ASSETS_DIR="$(git config --get unity3d.assets-dir || echo "Assets")"
+#!/bin/sh
+ASSETS_DIR="$(git config --get unity3d.assets-dir || echo "Assets")"
 find "$ASSETS_DIR" -depth -type d -empty -delete -print
 ----
 
