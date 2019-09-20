@@ -24,9 +24,11 @@ git config unity3d.assets-dir client/Assets
 
 == post-checkout & post-merge
 
-[source, bash]
+[source, sh]
 ----
 #!/bin/sh
+
+# Remove empty assets directory
 ASSETS_DIR="$(git config --get unity3d.assets-dir || echo "Assets")"
 find "$ASSETS_DIR" -depth -type d -empty -delete -print
 ----
