@@ -28,3 +28,18 @@ function rm_tmpfile() {
 trap rm_tmpfile EXIT
 trap 'trap - EXIT; rm_tmpfile; exit -1' INT PIPE TERM
 ----
+
+
+== zsh: パスのエイリアスを設定
+[source, zsh]
+----
+hash -d $alias=$path
+
+# e.g.
+# hash -d projects=~/Desktop/projects
+#
+# usage:
+# cd ~project
+----
+
+https://pocke.hatenablog.com/entry/2014/07/23/173811[zshの名前付きディレクトリがとても便利]
