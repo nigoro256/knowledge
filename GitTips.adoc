@@ -1,6 +1,17 @@
 = Git Tips
 
 == ローカルブランチを origin の最新で更新したいけれど checkout したくない場合
+*Append begin: 出来なくなってる*
+[source, sh]
+----
+Invalid remote name ".": Invalid remote name: "."
+error: failed to push some refs to '.'
+
+git --version
+git version 2.24.0
+----
+*Append end*
+
 [source, sh]
 ----
 git fetch
