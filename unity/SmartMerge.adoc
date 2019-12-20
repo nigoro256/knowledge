@@ -16,7 +16,7 @@ tool = unityyamlmerge
 
 [mergetool "unityyamlmerge"]
 trustExitCode = false
-cmd = '<path to UnityYAMLMerge>' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
+cmd = '<path to UnityYAMLMerge>' merge -h -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
 ----
 
 == git merge
