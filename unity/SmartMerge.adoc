@@ -1,0 +1,32 @@
+= setup smart merge
+
+== ex. path to UnityYAMLMerge
+`/Applications/Unity/Hub/Editor/2017.4.33f1/Unity.app/Contents/Tools/UnityYAMLMerge`
+
+== edit mergespecfile.txt
+/Applications/Unity/Hub/Editor/2017.4.33f1/Unity.app/Contents/Tools/mergespecfile.txt
+
+== set git config
+Add the following text to your .git/config or .gitconfig file:
+
+[source]
+----
+[merge]
+tool = unityyamlmerge
+
+[mergetool "unityyamlmerge"]
+trustExitCode = false
+cmd = '<path to UnityYAMLMerge>' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
+----
+
+== git merge
+next step if conflict.
+
+== do smart merge
+`git mergetool`
+
+''''
+
+=== See.
+* https://docs.unity3d.com/2017.4/Documentation/Manual/SmartMerge.html
+* https://qiita.com/Shaula/items/ebe778c232c30aff46fd
