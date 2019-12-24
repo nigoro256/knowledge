@@ -1,0 +1,17 @@
+= deprecated features
+
+== Apple Push Notification Service
+2020年11月以降、レガシーバイナリプロトコルをサポートしない
+
+https://developer.apple.com/news/?id=11042019a
+
+== GooglePlay Install Broadcast
+2020年3月1日まで
+
+https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html
+
+== UIWebView
+App Storeは、2020年4月時点でUIWebViewを使用する新しいアプリと、 +
+2020年12月時点でUIWebViewを使用するアプリの更新を受け付けなくなります。
+
+https://developer.apple.com/news/?id=12232019b
