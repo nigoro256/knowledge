@@ -1,25 +1,30 @@
 = Git Tips
 
+
 == ローカルブランチを origin の最新で更新したいけれど checkout したくない場合
-*Append begin: 出来なくなってる*
-[source, sh]
-----
-Invalid remote name ".": Invalid remote name: "."
-error: failed to push some refs to '.'
+https://stackoverflow.com/questions/3216360/merge-update-and-pull-git-branches-without-using-checkouts[Merge, update, and pull Git branches without using checkouts]
 
-git --version
-git version 2.24.0
-----
-*Append end*
+As long as you're doing a fast-forward merge, then you can simply use
 
 [source, sh]
 ----
-git fetch
-git push . origin/master:master
+git fetch <remote> <sourceBranch>:<destinationBranch>
 ----
 
-`git push $remote $local_branch:$remote_branch` +
-「``$remote``リポジトリの``$remote_branch``ブランチを自分のリポジトリの``$local_branch``で更新する」
+Examples:
+
+[source, sh]
+----
+# Merge local branch foo into local branch master,
+# without having to checkout master first.
+# Here `.` means to use the local repository as the "remote":
+git fetch . foo:master
+
+# Merge remote branch origin/foo into local branch foo,
+# without having to checkout foo first:
+git fetch origin foo:foo
+----
+
 
 == log で現在から特定コミットまでを表示する
 [source, sh]
