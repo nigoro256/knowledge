@@ -46,3 +46,10 @@ config
   trustExitCode = true
   cmd = '/usr/local/bin/bcomp' "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
 ----
+
+
+== 再度コンフリクト状態にする
+[source, sh]
+----
+git checkout --conflict=merge <file>
+----
