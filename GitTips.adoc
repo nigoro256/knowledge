@@ -36,6 +36,8 @@ http://tech.aainc.co.jp/archives/6740[GitのHEAD^ HEAD~やらダブルドット 
 
 
 == mergetool using Beyond Compare
+config
+
 [source]
 ----
 [merge]
