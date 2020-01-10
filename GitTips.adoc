@@ -43,6 +43,6 @@ config
 [merge]
   tool = bc3
 [mergetool "bc3"]
-  path = '/usr/local/bin/bcomp'
+  trustExitCode = true
   cmd = '/usr/local/bin/bcomp' "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
 ----
