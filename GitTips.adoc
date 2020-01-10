@@ -33,3 +33,14 @@ git log "HEAD...$COMMIT_ID"
 ----
 
 http://tech.aainc.co.jp/archives/6740[GitのHEAD^ HEAD~やらダブルドット トリプルドットやら]
+
+
+== mergetool using Beyond Compare
+[source]
+----
+[merge]
+  tool = bc3
+[mergetool "bc3"]
+  path = '/usr/local/bin/bcomp'
+  cmd = '/usr/local/bin/bcomp' "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+----
