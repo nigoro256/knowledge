@@ -53,3 +53,10 @@ config
 ----
 git checkout --conflict=merge <file>
 ----
+
+
+== 指定のコミットがどのブランチに含まれているか調べる
+[source, sh]
+----
+git branch --contains [<commit>]
+----
