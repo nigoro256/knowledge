@@ -1,0 +1,13 @@
+eval "$(direnv hook zsh)"
+
+autoload -U compinit
+compinit
+
+alias ls='ls -G'
+alias ll='ls -lAF'
+alias g='git'
+alias o='open'
+alias ovsc='open -a "Visual Studio Code"'
+
+# directory alias. usage: cd ~example
+hash -d example=/path/to/directory
