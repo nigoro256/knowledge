@@ -1,3 +1,4 @@
+* https://tech.cygames.co.jp/archives/3269/[MasterMemory – Unityと.NET Coreのための読み取り専用インメモリデータベース | Cygames Engineers' Blog]
 * https://baba-s.hatenablog.com/entry/2019/03/20/090000[【Unity】Unity エディタを開発者モードにしてみる - コガネブログ]
 * http://tsubakit1.hateblo.jp/entry/2019/02/04/024231[【Unity】TextMeshProで「数字」をテキストで表現する時にGC Allocを発生させない2つの方法 - テラシュールブログ]
 * https://masakami.com/archives/2019/04/07/234/[まさかみブログ | 【Unity】TextMeshPro.SetTextで表現できる整数値の限界]
