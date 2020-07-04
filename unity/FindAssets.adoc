@@ -1,0 +1,9 @@
+= AssetDatabase.FindAssets
+
+``filter``を空文字にすると全アセットが返ってくる。
+
+[source,cs]
+----
+// Assetsフォルダ以下のアセットのGUIDが返る(フォルダ含め)
+string[] guids1 = AssetDatabase.FindAssets("", new[]{"Assets"});
+----
