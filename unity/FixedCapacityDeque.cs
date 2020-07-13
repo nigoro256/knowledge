@@ -17,6 +17,24 @@ public class FixedCapacityDeque<T> : IEnumerable<T>
 
   public int Length { get; private set; }
 
+  public T First {
+    get {
+      if (Length <= 0) throw new InvalidOperationException("Buffer is empty.");
+      return _buffer[_head];
+    }
+  }
+
+  public T Last {
+    get {
+      if (Length <= 0) throw new InvalidOperationException("Buffer is empty.");
+      return _buffer[(_head + Length - 1) % Capacity];
+    }
+  }
+
+  public T this[int index] {
+    get { return _buffer[(_head + index) % Capacity]; }
+  }
+
   public FixedCapacityDeque(int capacity)
   {
     _buffer = new T[capacity];
@@ -45,9 +63,7 @@ public class FixedCapacityDeque<T> : IEnumerable<T>
 
   public T PopFirst()
   {
-    if (Length <= 0) throw new InvalidOperationException("Buffer is empty.");
-
-    var v = _buffer[_head];
+    var v = First;
     _head = ++_head % Capacity;
     --Length;
     return v;
@@ -55,9 +71,7 @@ public class FixedCapacityDeque<T> : IEnumerable<T>
 
   public T PopLast()
   {
-    if (Length <= 0) throw new InvalidOperationException("Buffer is empty.");
-
-    var v = _buffer[Tail];
+    var v = Last;
     --Length;
     return v;
   }
