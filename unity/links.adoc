@@ -27,3 +27,5 @@
 * https://blog.applibot.co.jp/2018/08/31/buildplayer-unity-201801/[Unity2018.1からのBuildPlayerを試す]
 * http://baba-s.hatenablog.com/entry/2016/04/14/150000[【Unity】Dictionary のキーに列挙型を使用した時のボックス化によるメモリ消費を回避する]
 * https://blogs.unity3d.com/jp/2020/07/16/add-deep-links-to-your-unity-mobile-apps-for-better-user-experience/[Add deep links to your Unity mobile apps for better user experience - Unity Technologies Blog]
+* https://blogs.unity3d.com/jp/2020/07/22/bolt-visual-scripting-is-now-included-in-all-unity-plans/[Bolt visual scripting is now included in all Unity plans]
+* https://note.com/unityjapan/n/n8620126b2d39[【無料化】Unityで人気のビジュアルスクリプティングツールを使いこなす【Bolt】｜ユニティ・テクノロジーズ・ジャパン（Unity Japan）｜note]
