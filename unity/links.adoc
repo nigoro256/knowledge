@@ -29,3 +29,4 @@
 * https://blogs.unity3d.com/jp/2020/07/16/add-deep-links-to-your-unity-mobile-apps-for-better-user-experience/[Add deep links to your Unity mobile apps for better user experience - Unity Technologies Blog]
 * https://blogs.unity3d.com/jp/2020/07/22/bolt-visual-scripting-is-now-included-in-all-unity-plans/[Bolt visual scripting is now included in all Unity plans]
 * https://note.com/unityjapan/n/n8620126b2d39[【無料化】Unityで人気のビジュアルスクリプティングツールを使いこなす【Bolt】｜ユニティ・テクノロジーズ・ジャパン（Unity Japan）｜note]
+* https://baba-s.hatenablog.com/entry/2020/07/14/090000[【Unity】TextMesh Pro の SetText 関数で文字列を設定する場合、文字列が変化しない場合でも UI のリビルドが走る - コガネブログ]
