@@ -4,8 +4,10 @@
 
 == 1. CFBundleDevelopmentRegion
 
-[source]
+[source, xml]
 ----
+<!-- GUIで設定すると ja_JP になる。リファレンス的には ja がおすすめらしい -->
+
 <key>CFBundleDevelopmentRegion</key>
 <string>ja_JP</string>
 ----
@@ -18,7 +20,7 @@ Localization native development region : Japan
 
 == 2. CFBundleLocalizations
 
-[source]
+[source, xml]
 ----
 <key>CFBundleLocalizations</key>
 <array>
