@@ -1,9 +1,27 @@
 = メモ書き
 
+== macOS で SMB ブラウジングの動作を調整する
+
+https://support.apple.com/ja-jp/HT208209
+
+SMB のファイルブラウジングを高速化するには、macOS が SMB 共有上の「.DS_Store」ファイルを読み取らないように阻止できます。
+そうすれば、Finder で基本情報だけを使って、各フォルダの中身がすぐにアルファベット順で表示されるようになります。
+以下のターミナルコマンドを使います。
+
+`defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE`
+
+その後、macOS アカウントからログアウトし、ログインし直してください。
+
+並べ替えを再び有効にするには、以下のコマンドを使います。
+
+`defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool FALSE`
+
 == Nortonの脆弱性保護が更新されない
+
 アクティビティモニターで``SymDaemon``を終了させると更新されるっぽい。
 
 == 単語
+
 * ブルーム
 * リムライト
 * 極座標
@@ -19,6 +37,7 @@
 * テッセレーション
 
 == PostgreSQL
+
 [source, sh]
 ----
 $ mkdir postgres
