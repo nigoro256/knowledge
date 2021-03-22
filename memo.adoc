@@ -1,5 +1,15 @@
 = メモ書き
 
+== macOS スクショ
+
+=== 「スクリーンショット YYYY-MM-DD hh.mm.ss」の「スクリーンショット」を指定の文字列に変更
+
+`defaults write com.apple.screencapture name ファイル名`
+
+=== 部分スクリーンショットでの陰影をなくす
+
+`defaults write com.apple.screencapture disable-shadow -bool true`
+
 == macOS で SMB ブラウジングの動作を調整する
 
 https://support.apple.com/ja-jp/HT208209
