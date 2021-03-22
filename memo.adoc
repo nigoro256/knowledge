@@ -4,8 +4,8 @@
 
 https://support.apple.com/ja-jp/HT208209
 
-SMB のファイルブラウジングを高速化するには、macOS が SMB 共有上の「.DS_Store」ファイルを読み取らないように阻止できます。
-そうすれば、Finder で基本情報だけを使って、各フォルダの中身がすぐにアルファベット順で表示されるようになります。
+SMB のファイルブラウジングを高速化するには、macOS が SMB 共有上の「.DS_Store」ファイルを読み取らないように阻止できます。 +
+そうすれば、Finder で基本情報だけを使って、各フォルダの中身がすぐにアルファベット順で表示されるようになります。 +
 以下のターミナルコマンドを使います。
 
 `defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE`
