@@ -25,7 +25,7 @@ public class StyleCopAnalyzerAddProcessor : AssetPostprocessor
     }
 
     // Add StyleCop.Analyzer to csproj files.
-    var csProjFiles = Directory.GetFiles(rootPath, "*.csproj", SearchOption.TopDirectoryOnly);
+    var csProjFiles = Directory.GetFiles(rootPath, "Assembly-CSharp*.csproj", SearchOption.TopDirectoryOnly);
     foreach (var csProjFile in csProjFiles) {
       AddStyleCopAnalyzer(csProjFile, dllFiles);
     }
