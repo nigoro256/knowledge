@@ -1,5 +1,20 @@
 = メモ書き
 
+== AsciiDoc Template
+
+----
+= Title
+:toc: left
+:sectnums:
+:imagesdir: images
+:webfonts!:
+
+== Sec1
+
+== Sec2
+
+----
+
 == macOS スクショ
 
 === 「スクリーンショット YYYY-MM-DD hh.mm.ss」の「スクリーンショット」を指定の文字列に変更
