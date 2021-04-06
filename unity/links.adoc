@@ -5,6 +5,9 @@
 * https://tech.cygames.co.jp/archives/3269/[MasterMemory – Unityと.NET Coreのための読み取り専用インメモリデータベース | Cygames Engineers' Blog]
 * https://tech.cygames.co.jp/archives/3383/[ZString – Unity/.NET CoreにおけるゼロアロケーションのC#文字列生成]
 * http://tsubakit1.hateblo.jp/entry/2019/02/02/060758[【Unity】TextMeshProにFont FallbackとDynamic SDF Systemが追加、日本語が使いやすくなった。]
+* http://baba-s.hatenablog.com/entry/2019/09/27/090000[【Unity】11種類以上のモバイルデバイスでゲーム画面がどのように表示されるかエディタ上で確認できる「Device Simulator」が Package Manager からインストールできるようになった]
+* http://tsubakit1.hateblo.jp/entry/2019/02/28/233000[【Unity】シーン内のGameObjectやAsset、メニューアイテムを検索できる「Unity Quick Search」 - テラシュールブログ]
+* https://baba-s.hatenablog.com/entry/2018/12/18/085000[【Unity】iOS / Android でプッシュ通知を実装できるパッケージが Package Manager からインストールできるようになった（現在はプレビュー版） - コガネブログ]
 
 == Editor
 
@@ -14,6 +17,10 @@
 * http://tsubakit1.hateblo.jp/entry/2018/01/18/212834[【Unity】Assembly Definition Filesという神機能]
 * https://noracle.jp/unity-app-icon-settings/[【Unity】アプリアイコンを正しく設定する – のらくるノート]
 * https://blog.applibot.co.jp/2018/08/31/buildplayer-unity-201801/[Unity2018.1からのBuildPlayerを試す]
+* http://tsubakit1.hateblo.jp/entry/2014/07/23/095513[HeaderとSpaceを使ってInspectorを整理する - テラシュールブログ]
+* https://baba-s.hatenablog.com/entry/2017/11/29/120325[【Unity】Hierarchy の検索欄にコンポーネント名を入力するとそれがアタッチされたオブジェクトを検索できる - コガネブログ]
+* http://tsubakit1.hateblo.jp/entry/2017/04/15/090000[【Unity】シーンの変更を「無かったこと」にする - テラシュールブログ]
+* https://baba-s.hatenablog.com/entry/2018/02/27/085800[【Unity】開きすぎたサブフォルダの階層は Alt を押しながらクリックするとすべて閉じることができる - コガネブログ]
 
 == Performance, Optimize
 
@@ -33,13 +40,18 @@
 * http://baba-s.hatenablog.com/entry/2018/09/28/210000[【Unity】Unity 2018.3.0b3 からガベージコレクションを無効化できる API が追加されたので試してみた]
 * https://baba-s.hatenablog.com/entry/2020/05/22/201700[【Unity】AssetDatabase.CreateAsset で時間がかかる時に高速化できるかもしれない「AssetDatabase.StartAssetEditing」 - コガネブログ]
 
+* https://qiita.com/k7a/items/df6dd8ea66cbc5a1e21d[今更誰も教えてくれない、Unityにおけるリソース読み込みについての基礎知識]
+** AssetBundleのビルド時に以下のオプションを指定することで、ファイル名（＋拡張子）でのアクセスを無効化することができる。これにより若干のパフォーマンスの向上が見込める。
+*** BuildAssetBundleOptions.DisableLoadAssetByFileName
+*** BuildAssetBundleOptions.DisableLoadAssetByFileNameWithExtension
+
 == Tips
 
 * https://masakami.com/archives/2019/04/07/234/[まさかみブログ | 【Unity】TextMeshPro.SetTextで表現できる整数値の限界]
 * https://qiita.com/shiena/items/4ed871931338e4e574cb[Unity2018.4はLTSだけどバージョンアップで破壊的変更されている]
-* https://qiita.com/k7a/items/df6dd8ea66cbc5a1e21d[今更誰も教えてくれない、Unityにおけるリソース読み込みについての基礎知識]
 * https://baba-s.hatenablog.com/entry/2020/08/12/090000[【Unity】Unity IAP の Asset Update Available ダイアログを無効化する方法 - コガネブログ]
 * http://yutakaseda3216.hatenablog.com/entry/2017/10/02/160426[【Unity】OnPostProcessAllAssetsを使う時に特定の方法で無限ループする - かせノート。]
+* https://developers.cyberagent.co.jp/blog/archives/4262/[Web出身のUnityエンジニアによる大規模ゲームの基盤設計 | CyberAgent Developers Blog]
 
 == Mobile Platforms
 
