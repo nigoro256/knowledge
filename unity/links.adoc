@@ -11,6 +11,7 @@
 
 == Editor
 
+* http://tsubakit1.hateblo.jp/entry/2016/09/08/235428[【Unity】Local CacheServerでSwitch platformを高速で行う - テラシュールブログ]
 * https://baba-s.hatenablog.com/entry/2019/03/20/090000[【Unity】Unity エディタを開発者モードにしてみる - コガネブログ]
 * http://tsubakit1.hateblo.jp/entry/2015/06/08/235853[【Unity】Inspectorビューのプレビューを分離する]
 * http://baba-s.hatenablog.com/entry/2018/09/12/202500[【Unity】Unity 2018.3.0b1 新機能「Clear All PlayerPrefs」]
