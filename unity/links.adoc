@@ -24,6 +24,7 @@
 
 == Performance, Optimize
 
+* http://www.woodensoldier.info/computer/csharptips/16.htm[C# 変数の初期化について]
 * http://tsubakit1.hateblo.jp/entry/2019/02/04/024231[【Unity】TextMeshProで「数字」をテキストで表現する時にGC Allocを発生させない2つの方法 - テラシュールブログ]
 * https://techblog.kayac.com/unity-fixed-dpi[Unityで画素密度を固定する解像度設定(FixedDPI)]
 * http://baba-s.hatenablog.com/entry/2018/11/14/124000[【Unity】yield return 0 を使用すると 20B の GC Alloc が発生する]
