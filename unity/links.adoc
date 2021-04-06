@@ -1,33 +1,50 @@
+= Unity 関係のリンク集
+
+== Library, Package
+
 * https://tech.cygames.co.jp/archives/3269/[MasterMemory – Unityと.NET Coreのための読み取り専用インメモリデータベース | Cygames Engineers' Blog]
-* https://baba-s.hatenablog.com/entry/2019/03/20/090000[【Unity】Unity エディタを開発者モードにしてみる - コガネブログ]
-* http://tsubakit1.hateblo.jp/entry/2019/02/04/024231[【Unity】TextMeshProで「数字」をテキストで表現する時にGC Allocを発生させない2つの方法 - テラシュールブログ]
-* https://masakami.com/archives/2019/04/07/234/[まさかみブログ | 【Unity】TextMeshPro.SetTextで表現できる整数値の限界]
-* https://forum.unity.com/threads/how-to-add-a-launch-screen-storyboard-for-ios-in-unity-app-store-requirement-by-june-30-2020.849226/[Unity - How to add a launch-screen storyboard for iOS in Unity - App Store requirement by June 30, 2020 - Unity Forum]
-* https://qiita.com/cooloon/items/74506c1681df2e5d001b[UnityでiOSのLaunchScreenにStoryboardを使う方法 - Qiita]
-* https://qiita.com/shiena/items/4ed871931338e4e574cb[Unity2018.4はLTSだけどバージョンアップで破壊的変更されている]
 * https://tech.cygames.co.jp/archives/3383/[ZString – Unity/.NET CoreにおけるゼロアロケーションのC#文字列生成]
-* https://blogs.unity3d.com/jp/2020/02/07/how-on-demand-rendering-can-improve-mobile-performance/[How on-demand rendering can improve mobile performance]
+* http://tsubakit1.hateblo.jp/entry/2019/02/02/060758[【Unity】TextMeshProにFont FallbackとDynamic SDF Systemが追加、日本語が使いやすくなった。]
+
+== Editor
+
+* https://baba-s.hatenablog.com/entry/2019/03/20/090000[【Unity】Unity エディタを開発者モードにしてみる - コガネブログ]
+* http://tsubakit1.hateblo.jp/entry/2015/06/08/235853[【Unity】Inspectorビューのプレビューを分離する]
+* http://baba-s.hatenablog.com/entry/2018/09/12/202500[【Unity】Unity 2018.3.0b1 新機能「Clear All PlayerPrefs」]
+* http://tsubakit1.hateblo.jp/entry/2018/01/18/212834[【Unity】Assembly Definition Filesという神機能]
+* https://noracle.jp/unity-app-icon-settings/[【Unity】アプリアイコンを正しく設定する – のらくるノート]
+* https://blog.applibot.co.jp/2018/08/31/buildplayer-unity-201801/[Unity2018.1からのBuildPlayerを試す]
+
+== Performance, Optimize
+
+* http://tsubakit1.hateblo.jp/entry/2019/02/04/024231[【Unity】TextMeshProで「数字」をテキストで表現する時にGC Allocを発生させない2つの方法 - テラシュールブログ]
 * https://techblog.kayac.com/unity-fixed-dpi[Unityで画素密度を固定する解像度設定(FixedDPI)]
 * http://baba-s.hatenablog.com/entry/2018/11/14/124000[【Unity】yield return 0 を使用すると 20B の GC Alloc が発生する]
 * http://baba-s.hatenablog.com/entry/2019/08/27/190000[【C#】ファイルの一覧を取得する時は Directory.GetFiles よりも Directory.EnumerateFiles の方が早い]
-* http://tsubakit1.hateblo.jp/entry/2015/06/08/235853[【Unity】Inspectorビューのプレビューを分離する]
 * http://tsubakit1.hateblo.jp/entry/2015/11/08/212202[【Unity】パフォーマンスが良いらしいUIのマスク、RectMask2Dについて]
-* http://tsubakit1.hateblo.jp/entry/2019/02/02/060758[【Unity】TextMeshProにFont FallbackとDynamic SDF Systemが追加、日本語が使いやすくなった。]
 * https://techblog.kayac.com/unity_advent_calendar_2018_25[【Unity】グローバルイルミネーション(GI)を使わないプロジェクトでやっておくべきこと]
-* http://tsubakit1.hateblo.jp/entry/2017/03/22/233000[【Unity】ゲームに最初から含めるアセット群を圧縮するオプション - テラシュールブログ]
-* https://qiita.com/warapuri/items/9b705f09627ea15b3b6b[Unity 2017.X + Android で異常にファイルロードが遅い場合の解決法 - Qiita]
-* https://blogs.unity3d.com/jp/2018/11/26/feature-preview-incremental-garbage-collection/[Feature Preview: Incremental Garbage Collection기능 프리뷰: 점진적 가비지 컬렉션機能プレビュー：インクリメンタルガベージコレクション - Unity Technologies Blog]
-* https://baba-s.hatenablog.com/entry/2018/11/15/091500[【Unity】データをバックグラウンドで読み込む時に 1 フレーム内で使える最大時間を変更できる「Application.backgroundLoadingPriority」 - コガネブログ]
-* https://qiita.com/k7a/items/df6dd8ea66cbc5a1e21d[今更誰も教えてくれない、Unityにおけるリソース読み込みについての基礎知識]
-* https://blogs.unity3d.com/jp/2018/10/08/optimizing-loading-performance-understanding-the-async-upload-pipeline/[Optimizing loading performance: Understanding the Async Upload Pipeline로딩 성능 최적화: Async Upload Pipeline 알아보기Async Upload Pipeline（AUP）でローディングのパフォーマンスを最適化する - Unity Technologies Blog]
-* https://blogs.unity3d.com/jp/2018/10/03/support-for-android-app-bundle-aab-in-unity-2018-3-beta/[Support for Android App Bundle (AAB) in Unity 2018.3 beta]
-* http://baba-s.hatenablog.com/entry/2018/09/28/210000[【Unity】Unity 2018.3.0b3 からガベージコレクションを無効化できる API が追加されたので試してみた]
-* http://tsubakit1.hateblo.jp/entry/2018/01/18/212834[【Unity】Assembly Definition Filesという神機能]
-* http://baba-s.hatenablog.com/entry/2018/09/12/202500[【Unity】Unity 2018.3.0b1 新機能「Clear All PlayerPrefs」]
-* https://blog.applibot.co.jp/2018/08/31/buildplayer-unity-201801/[Unity2018.1からのBuildPlayerを試す]
 * http://baba-s.hatenablog.com/entry/2016/04/14/150000[【Unity】Dictionary のキーに列挙型を使用した時のボックス化によるメモリ消費を回避する]
-* https://blogs.unity3d.com/jp/2020/07/16/add-deep-links-to-your-unity-mobile-apps-for-better-user-experience/[Add deep links to your Unity mobile apps for better user experience - Unity Technologies Blog]
-* https://blogs.unity3d.com/jp/2020/07/22/bolt-visual-scripting-is-now-included-in-all-unity-plans/[Bolt visual scripting is now included in all Unity plans]
-* https://note.com/unityjapan/n/n8620126b2d39[【無料化】Unityで人気のビジュアルスクリプティングツールを使いこなす【Bolt】｜ユニティ・テクノロジーズ・ジャパン（Unity Japan）｜note]
+* https://blogs.unity3d.com/jp/2018/10/08/optimizing-loading-performance-understanding-the-async-upload-pipeline/[Async Upload Pipeline（AUP）でローディングのパフォーマンスを最適化する - Unity Technologies Blog]
 * https://baba-s.hatenablog.com/entry/2020/07/14/090000[【Unity】TextMesh Pro の SetText 関数で文字列を設定する場合、文字列が変化しない場合でも UI のリビルドが走る - コガネブログ]
-* https://noracle.jp/unity-app-icon-settings/[【Unity】アプリアイコンを正しく設定する – のらくるノート]
+* http://tsubakit1.hateblo.jp/entry/2017/03/22/233000[【Unity】ゲームに最初から含めるアセット群を圧縮するオプション - テラシュールブログ]
+* https://blogs.unity3d.com/jp/2020/02/07/how-on-demand-rendering-can-improve-mobile-performance/[How on-demand rendering can improve mobile performance]
+* https://blogs.unity3d.com/jp/2018/11/26/feature-preview-incremental-garbage-collection/[機能プレビュー：インクリメンタルガベージコレクション - Unity Technologies Blog]
+* https://baba-s.hatenablog.com/entry/2018/11/15/091500[【Unity】データをバックグラウンドで読み込む時に 1 フレーム内で使える最大時間を変更できる「Application.backgroundLoadingPriority」 - コガネブログ]
+* http://baba-s.hatenablog.com/entry/2018/09/28/210000[【Unity】Unity 2018.3.0b3 からガベージコレクションを無効化できる API が追加されたので試してみた]
+* https://baba-s.hatenablog.com/entry/2020/05/22/201700[【Unity】AssetDatabase.CreateAsset で時間がかかる時に高速化できるかもしれない「AssetDatabase.StartAssetEditing」 - コガネブログ]
+
+== Tips
+
+* https://masakami.com/archives/2019/04/07/234/[まさかみブログ | 【Unity】TextMeshPro.SetTextで表現できる整数値の限界]
+* https://qiita.com/shiena/items/4ed871931338e4e574cb[Unity2018.4はLTSだけどバージョンアップで破壊的変更されている]
+* https://qiita.com/k7a/items/df6dd8ea66cbc5a1e21d[今更誰も教えてくれない、Unityにおけるリソース読み込みについての基礎知識]
+* https://baba-s.hatenablog.com/entry/2020/08/12/090000[【Unity】Unity IAP の Asset Update Available ダイアログを無効化する方法 - コガネブログ]
+* http://yutakaseda3216.hatenablog.com/entry/2017/10/02/160426[【Unity】OnPostProcessAllAssetsを使う時に特定の方法で無限ループする - かせノート。]
+
+== Mobile Platforms
+
+* https://forum.unity.com/threads/how-to-add-a-launch-screen-storyboard-for-ios-in-unity-app-store-requirement-by-june-30-2020.849226/[Unity - How to add a launch-screen storyboard for iOS in Unity - App Store requirement by June 30, 2020 - Unity Forum]
+* https://qiita.com/cooloon/items/74506c1681df2e5d001b[UnityでiOSのLaunchScreenにStoryboardを使う方法 - Qiita]
+* https://qiita.com/warapuri/items/9b705f09627ea15b3b6b[Unity 2017.X + Android で異常にファイルロードが遅い場合の解決法 - Qiita]
+* https://blogs.unity3d.com/jp/2018/10/03/support-for-android-app-bundle-aab-in-unity-2018-3-beta/[Support for Android App Bundle (AAB) in Unity 2018.3 beta]
+* https://blogs.unity3d.com/jp/2020/07/16/add-deep-links-to-your-unity-mobile-apps-for-better-user-experience/[Add deep links to your Unity mobile apps for better user experience - Unity Technologies Blog]
