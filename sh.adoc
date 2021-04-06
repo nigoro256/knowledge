@@ -9,6 +9,9 @@
 == QuickTimeでキャプチャした.movを.mp4に変換
 `ffmpeg -i test.mov -vcodec copy test.mp4`
 
+== .avi を QuickTime で再生できる .mp4 に変換
+
+`ffmpeg -i src.avi -pix_fmt yuv420p -vf 'scale=-2:ih' dest.mp4`
 
 == mac拡張属性を消す
 ``ls``すると表示される``@``の事。 +
