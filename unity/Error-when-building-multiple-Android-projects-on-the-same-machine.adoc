@@ -1,0 +1,24 @@
+= 同じビルドマシンで複数の Android プロジェクトをビルドするとエラーになる
+:webfonts!:
+
+== 詳細
+
+. GooglePlay 版と AmazonAppstore 版を同時にビルド。
+. どちらかのビルドが終了した時点で Gradle のデーモンがストップされる。
+. 動いている方のビルドが「Gradle のデーモンがストップされた」と言って失敗する。
+
+== 回避方法
+
+Unity 2018 以降::
+`Preferences/External Tools` で `Stop Gradle daemons on exit` のチェックを外すと回避できるらしい。
+
+Unity 2018 未満::
+回避不能（おそらく）。 +
+Android プロジェクトが複数ビルドされないようにして踏まないようにする。
+
+== 情報ソース
+
+* https://issuetracker.unity3d.com/issues/do-not-kill-other-gradle-daemons-when-build-completes[Unity Issue Tracker - Do Not Kill other gradle daemons when build completes]
+
+* https://unity3d.com/unity/whats-new/2017.4.18[Unity whats-new 2017.4.18]
+** Mobile: Android gradle daemons are now killed when the editor is shut down instead of after every build. (1041385)
