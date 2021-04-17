@@ -41,6 +41,15 @@ SMB のファイルブラウジングを高速化するには、macOS が SMB �
 
 `defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool FALSE`
 
+== Norton: macOS Big Sur の smb でアップロードがブロックされる
+
+* macOS Big Sur 11.2.3
+* Norton 360 8.6.2
+
+=== 回避方法
+
+`システム環境設定 > ネットワーク > Norton 360` を無効にする。
+
 == Nortonの脆弱性保護が更新されない
 
 アクティビティモニターで``SymDaemon``を終了させると更新されるっぽい。
