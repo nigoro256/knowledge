@@ -64,7 +64,7 @@ ln -s "/Users/Me/something-game/client" "/Users/Me/something-game-client"
 
 == 問題点
 
-シンボリックリンクのプロジェクトを開くと Unity Hub に実態の方が登録される。 +
+シンボリックリンクのプロジェクトを開くと Unity Hub に実体の方が登録される。 +
 結果、同じプロジェクトが重複して表示される事になる。
 
 例で言うと `something-game-client` と `client` が重複して表示される。
