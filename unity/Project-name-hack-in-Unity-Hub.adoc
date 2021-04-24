@@ -1,0 +1,70 @@
+= Unity Hub のプロジェクト名表示をましにする
+:toc:
+
+== 概要
+
+----
+/Users/Me/
+  something-game/
+    server/
+    assets/
+    masterdata/
+    client/ <- Unity プロジェクト
+----
+
+上記のようなフォルダ構成が例えば10個あった場合、Unity Hub に `client` が10個並ぶことになる。 +
+これをましにする。 (フィルタリングできるようにする)
+
+== 前提や必要なもの、検証環境など
+
+* macOS (Big Sur 11.2.3)
+* Xcode (12.4)
+* Unity Hub (2.4.3)
+
+== 注意
+
+バージョン管理の問題が無ければ下記の手順で解決します。
+
+. `client` をリネーム。 (例えば ``something-game-client``)
+. リネームしたフォルダへシンボリックリンクを張る。 (例えば ``ln -s something-game-client client``)
+
+Unity Hub で開くのはリネームした方 (``something-game-client``)
+
+== 手順
+
+. Unity Hub にプロジェクトを追加
+. シンボリックリンクを作成
+. 設定ファイルを編集
+. Unity Hub で表示を確認
+
+=== Unity Hub にプロジェクトを追加
+
+Unity Hub に `/Users/Me/something-game/client` を追加。 +
+その後、Unity Hub を終了しておく。
+
+=== シンボリックリンクを作成
+
+`/Users/Me/something-game/client` へのシンボリックリンクを作成。 +
+例えば、
+
+[source, sh]
+----
+ln -s "/Users/Me/something-game/client" "/Users/Me/something-game-client"
+----
+
+=== 設定ファイルを編集
+
+. `~/Library/Preferences/com.unity3d.UnityEditor5.x.plist` を Xcode で開く。
+. `RecentlyUsedProjectPaths` で検索して、対象のパスが書かれた項目を探す。 (例で言うと ``/Users/Me/something-game/client``)
+. 探した項目をシンボリックリンクのパスに書き換えて保存。 (例で言うと ``/Users/Me/something-game-client``)
+
+=== Unity Hub で表示を確認
+
+再度 Unity Hub を開いて意図したとおりに表示されているか確認。
+
+== 問題点
+
+シンボリックリンクのプロジェクトを開くと Unity Hub に実態の方が登録される。 +
+結果、同じプロジェクトが重複して表示される事になる。
+
+例で言うと `something-game-client` と `client` が重複して表示される。
