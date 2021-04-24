@@ -20,6 +20,7 @@
 * macOS (Big Sur 11.2.3)
 * Xcode (12.4)
 * Unity Hub (2.4.3)
+* Unity は閉じておく必要あり
 
 == 注意
 
