@@ -22,6 +22,7 @@
 * https://baba-s.hatenablog.com/entry/2017/11/29/120325[【Unity】Hierarchy の検索欄にコンポーネント名を入力するとそれがアタッチされたオブジェクトを検索できる - コガネブログ]
 * http://tsubakit1.hateblo.jp/entry/2017/04/15/090000[【Unity】シーンの変更を「無かったこと」にする - テラシュールブログ]
 * https://baba-s.hatenablog.com/entry/2018/02/27/085800[【Unity】開きすぎたサブフォルダの階層は Alt を押しながらクリックするとすべて閉じることができる - コガネブログ]
+* https://light11.hatenadiary.com/entry/2021/05/26/201006[【Unity】globパターンを使ってアセットを検索する（Unity2020からの新機能） - LIGHT11]
 
 == Performance, Optimize
 
