@@ -1,7 +1,7 @@
 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ
 0123456789 `~!@#$%^&*()-=_+[]{}\|;:'",./<>?
 
-「」、。・
+「」、。・ー
 
 あいうえお　かきくけこ
 さしすせそ　たちつてと
